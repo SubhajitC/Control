@@ -1,0 +1,20 @@
+https://reactnavigation.org/docs/getting-started/
+
+https://callstack.github.io/react-native-paper/
+
+
+https://reactnativeelements.com/
+
+
+https://www.react-native-material.com/
+
+
+https://oblador.github.io/react-native-vector-icons/
+
+
+https://www.w3schools.com/colors/colors_picker.asp
+
+
+npm i react-native-scaled-sheet
+
+npm i react-native-vector-icons

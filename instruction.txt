@@ -1,0 +1,13 @@
+Thank you for your interest in our internship opening. As a next step, we are expecting you to complete a short assignment.
+
+Some measures you have to keep in mind:
+
+1) try to make components and reuse them. It makes code optimisation.
+
+2) And for responsiveness you have to take the width n height of the screen into consideration by making mixins.
+
+3) Submit as early as possible in a GitHub Link
+
+Thanks,
+Jatin
+Submission deadline: 28 April, 2022
