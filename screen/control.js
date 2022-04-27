@@ -33,7 +33,7 @@ const control = () => {
           <Text></Text>
         </View>
         <Text style={styles.groupcontrols}>SCENES</Text>
-        <View style={styles.txt}>
+        <View style={styles.rocket}>
           <Text style={styles.all}>
             <Iconins
               name="rocket"
@@ -45,7 +45,7 @@ const control = () => {
             ALL Off
           </Text>
         </View>
-        <View style={styles.txt}>
+        <View style={styles.rocketone}>
           <Text style={styles.all}>
             <Iconins
               name="rocket"
@@ -89,8 +89,8 @@ const control = () => {
           </View>
         </View>
         <Text style={styles.controls}>CONTROLS</Text>
-        <View>
-          <Text style={styles.More}>
+        <View style={styles.More}>
+          <Text style={styles.textbox}>
             <Icon name="rightcircle" color="#686868" size={25} />
             Window Roller Blind OFF
           </Text>
@@ -131,6 +131,13 @@ const styles = ScaledSheet.create({
     alignItems: 'center',
     fontFamily: 'Sans-serif',
   },
+  textbox:{
+    fontFamily: 'notoserif',
+    fontSize: '15@s',
+    color: '#686868',
+    fontWeight: 'bold',
+    top:'13@s'
+  },
   blackout:{
     height: '55@s',
     width: '156@s',
@@ -143,6 +150,17 @@ const styles = ScaledSheet.create({
     top:'-177@s',
     alignItems: 'center',
     fontFamily: 'Sans-serif',
+  },
+  More: {
+    height: '55@s',
+    width: width / 1.15,
+    backgroundColor: '#FFF',
+    marginLeft: '133@s',
+    paddingLeft: '11@s',
+    right: '122@s',
+    alignItems: 'center',
+    fontFamily: 'Sans-serif',
+    top: '-58@s',
   },
   flip:{
     height: '55@s',
@@ -185,15 +203,77 @@ const styles = ScaledSheet.create({
   },
   txt: {
     height: '55@s',
-    width: width / 1.9,
+    width: '155@s',
     backgroundColor: '#FFF',
     flexDirection: 'column',
     marginVertical: '5@s',
     marginLeft: '133@s',
     paddingLeft: '11@s',
-    left: '-163@s',
+    left: '-122@s',
     alignItems: 'center',
     fontFamily: 'Sans-serif',
+  },
+  rocket: {
+    height: '55@s',
+    width: '148@s',
+    backgroundColor: '#FFF',
+    flexDirection: 'column',
+    marginVertical: '5@s',
+    marginLeft: '133@s',
+    paddingLeft: '11@s',
+    left: '-122@s',
+    alignItems: 'center',
+    fontFamily: 'Sans-serif',
+  },
+  rocketone: {
+    height: '55@s',
+    width: '148@s',
+    backgroundColor: '#FFF',
+    flexDirection: 'column',
+    marginVertical: '5@s',
+    marginLeft: '133@s',
+    paddingLeft: '11@s',
+    left: '-122@s',
+    alignItems: 'center',
+    fontFamily: 'Sans-serif',
+  },
+  bright: {
+    height: '55@s',
+    width: '160@s',
+    backgroundColor: '#FFF',
+    flexDirection: 'column',
+    marginVertical: '5@s',
+    marginLeft: '133@s',
+    paddingLeft: '11@s',
+    right: '-45@s',
+    alignItems: 'center',
+    fontFamily: 'Sans-serif',
+    top: '-131@s',
+  },
+  txt: {
+    height: '55@s',
+    width: '155@s',
+    backgroundColor: '#FFF',
+    flexDirection: 'column',
+    marginVertical: '5@s',
+    marginLeft: '133@s',
+    paddingLeft: '11@s',
+    left: '-122@s',
+    alignItems: 'center',
+    fontFamily: 'Sans-serif',
+  },
+  brightone: {
+    height: '55@s',
+    width: '155@s',
+    backgroundColor: '#FFF',
+    flexDirection: 'column',
+    marginVertical: '5@s',
+    marginLeft: '133@s',
+    paddingLeft: '11@s',
+    right: '-48@s',
+    alignItems: 'center',
+    fontFamily: 'Sans-serif',
+    top: '-65@s',
   },
   topview: {
     marginTop: '-127@s',
@@ -201,74 +281,38 @@ const styles = ScaledSheet.create({
   baseview: {
     marginTop: '-63@s',
   },
-  bright: {
-    height: '55@s',
-    width: width / 1.9,
-    backgroundColor: '#FFF',
-    flexDirection: 'column',
-    marginVertical: '5@s',
-    marginLeft: '133@s',
-    paddingLeft: '11@s',
-    right: '-27@s',
-    alignItems: 'center',
-    fontFamily: 'Sans-serif',
-    top: '-131@s',
-  },
-  More: {
-    height: '55@s',
-    width: width / 1.15,
-    backgroundColor: '#FFF',
-    marginLeft: '133@s',
-    paddingLeft: '11@s',
-    right: '122@s',
-    alignItems: 'center',
-    fontFamily: 'Sans-serif',
-    top: '-58@s',
-  },
-  brightone: {
-    height: '55@s',
-    width: width / 1.9,
-    backgroundColor: '#FFF',
-    flexDirection: 'column',
-    marginVertical: '5@s',
-    marginLeft: '133@s',
-    paddingLeft: '11@s',
-    right: '-27@s',
-    alignItems: 'center',
-    fontFamily: 'Sans-serif',
-    top: '-65@s',
-  },
+  
   pag: {
     fontSize: '15@s',
   },
   textone: {
     fontFamily: 'normal',
-    fontSize: '20@s',
+    fontSize: '16@s',
     fontWeight: 'bold',
     color: '#404040',
-  },
-  textone: {
-    fontSize: '17@s',
-    fontWeight: 'bold',
-    color: '#404040',
+    left:'10@s'
   },
   texttwo: {
     fontFamily: 'notoserif',
-    fontSize: '13@s',
+    fontSize: '10@s',
     color: '#686868',
+    fontWeight: 'bold',
+    left:'12@s'
   },
   groupcontrols: {
     fontFamily: 'notoserif',
-    fontSize: '15@s',
+    fontSize: '13@s',
+    left:'11@s',
     color: '#686868',
     fontWeight: 'bold',
   },
   controls: {
     fontFamily: 'notoserif',
-    fontSize: '15@s',
+    fontSize: '13@s',
     color: '#686868',
     fontWeight: 'bold',
     top: '-63@s',
+    left:'12@s'
   },
   all: {
     alignItems: 'center',
