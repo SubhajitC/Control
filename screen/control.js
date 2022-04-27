@@ -22,7 +22,7 @@ const control = () => {
           <Iconins name="chevron-left" color="#686868" size={33} />
           <Iconins
             name="menu"
-            style={{left: 325, position: 'absolute', top: -1}}
+            style={{left: 355, position: 'absolute', top: -1}}
             color="#686868"
             size={33}
           />
@@ -34,50 +34,20 @@ const control = () => {
         </View>
         <Text style={styles.groupcontrols}>SCENES</Text>
         <View style={styles.rocket}>
-          <Text style={styles.all}>
-            <Iconins
-              name="rocket"
-              style={styles.backarrow}
-              color="#990000"
-              size={22}
-              left={44}
-            />
-            ALL Off
-          </Text>
+          <Iconins name="rocket" style={styles.arrowLeft} />
+          <Text style={styles.shadow}>ALL Off</Text>
         </View>
         <View style={styles.rocketone}>
-          <Text style={styles.all}>
-            <Iconins
-              name="rocket"
-              style={{left: 295, position: 'absolute', top: 129}}
-              color="#990000"
-              size={25}
-            />
-            ALL Off
-          </Text>
+          <Iconins name="rocket" style={styles.arrowLeft} />
+          <Text style={styles.shadow}>ALL Off</Text>
         </View>
         <View style={styles.bright}>
-          <Text style={styles.all}>
-            <Iconins
-              name="rocket"
-              style={styles.backarrow}
-              color="#990000"
-              size={22}
-              left={44}
-            />
-            Bright
-          </Text>
+          <Iconins name="rocket" style={styles.arrowLeft} />
+          <Text style={styles.shadow}>Bright</Text>
         </View>
         <View style={styles.bright}>
-          <Text style={styles.all}>
-            <Iconins
-              name="rocket"
-              style={{left: 295, position: 'absolute', top: 129}}
-              color="#990000"
-              size={25}
-            />
-            Bright
-          </Text>
+          <Iconins name="rocket" style={styles.arrowLeft} />
+          <Text style={styles.shadow}>Bright</Text>
         </View>
         <View style={styles.topview}>
           <Text style={styles.groupcontrols}>GROUP CONTROLS</Text>
@@ -90,8 +60,8 @@ const control = () => {
         </View>
         <Text style={styles.controls}>CONTROLS</Text>
         <View style={styles.More}>
+        <Icon name="rightcircle" style={styles.Left}/>
           <Text style={styles.textbox}>
-            <Icon name="rightcircle" color="#686868" size={25} />
             Window Roller Blind OFF
           </Text>
         </View>
@@ -105,11 +75,11 @@ const control = () => {
           <Text style={styles.all}>Close</Text>
         </View>
         <View style={styles.blackout}>
-        <Text style={styles.all}>Blackout</Text>
-      </View>
-      <View style={styles.flip}>
-        <Text style={styles.all}>Flip+</Text>
-      </View>
+          <Text style={styles.all}>Blackout</Text>
+        </View>
+        <View style={styles.flip}>
+          <Text style={styles.all}>Flip+</Text>
+        </View>
       </View>
     </ScrollView>
   );
@@ -118,7 +88,7 @@ const control = () => {
 export default control;
 
 const styles = ScaledSheet.create({
-  Open:{
+  Open: {
     height: '55@s',
     width: '96@s',
     backgroundColor: '#FFF',
@@ -127,18 +97,32 @@ const styles = ScaledSheet.create({
     marginLeft: '133@s',
     paddingLeft: '11@s',
     left: '-122@s',
-    top:'-54@s',
+    top: '-54@s',
     alignItems: 'center',
     fontFamily: 'Sans-serif',
   },
-  textbox:{
+  arrowLeft: {
+    marginTop: '25@s',
+    left: '-44@s',
+    top: '-2@s',
+    fontSize: '16@s',
+    color: '#990000',
+  },
+  Left: {
+    marginTop: '25@s',
+    left: '-130@s',
+    top: '-9@s',
+    fontSize: '22@s',
+    color: '#686868',
+  },
+  textbox: {
     fontFamily: 'notoserif',
     fontSize: '15@s',
     color: '#686868',
     fontWeight: 'bold',
-    top:'13@s'
+    top: '-32@s',
   },
-  blackout:{
+  blackout: {
     height: '55@s',
     width: '156@s',
     backgroundColor: '#FFF',
@@ -147,13 +131,13 @@ const styles = ScaledSheet.create({
     marginLeft: '133@s',
     paddingLeft: '11@s',
     left: '-122@s',
-    top:'-177@s',
+    top: '-177@s',
     alignItems: 'center',
     fontFamily: 'Sans-serif',
   },
   More: {
     height: '55@s',
-    width: width / 1.15,
+    width: '326@s',
     backgroundColor: '#FFF',
     marginLeft: '133@s',
     paddingLeft: '11@s',
@@ -162,7 +146,7 @@ const styles = ScaledSheet.create({
     fontFamily: 'Sans-serif',
     top: '-58@s',
   },
-  flip:{
+  flip: {
     height: '55@s',
     width: '155@s',
     backgroundColor: '#FFF',
@@ -171,11 +155,11 @@ const styles = ScaledSheet.create({
     marginLeft: '133@s',
     paddingLeft: '11@s',
     left: '50@s',
-    top:'-243@s',
+    top: '-243@s',
     alignItems: 'center',
     fontFamily: 'Sans-serif',
   },
-  Pause:{
+  Pause: {
     height: '55@s',
     width: '96@s',
     backgroundColor: '#FFF',
@@ -184,11 +168,11 @@ const styles = ScaledSheet.create({
     marginLeft: '133@s',
     paddingLeft: '11@s',
     left: '-6@s',
-    top:'-118@s',
+    top: '-118@s',
     alignItems: 'center',
     fontFamily: 'Sans-serif',
   },
-  Close:{
+  Close: {
     height: '55@s',
     width: '96@s',
     backgroundColor: '#FFF',
@@ -197,7 +181,7 @@ const styles = ScaledSheet.create({
     marginLeft: '133@s',
     paddingLeft: '11@s',
     left: '109@s',
-    top:'-183@s',
+    top: '-183@s',
     alignItems: 'center',
     fontFamily: 'Sans-serif',
   },
@@ -281,7 +265,7 @@ const styles = ScaledSheet.create({
   baseview: {
     marginTop: '-63@s',
   },
-  
+
   pag: {
     fontSize: '15@s',
   },
@@ -290,19 +274,19 @@ const styles = ScaledSheet.create({
     fontSize: '16@s',
     fontWeight: 'bold',
     color: '#404040',
-    left:'10@s'
+    left: '10@s',
   },
   texttwo: {
     fontFamily: 'notoserif',
     fontSize: '10@s',
     color: '#686868',
     fontWeight: 'bold',
-    left:'12@s'
+    left: '12@s',
   },
   groupcontrols: {
     fontFamily: 'notoserif',
     fontSize: '13@s',
-    left:'11@s',
+    left: '11@s',
     color: '#686868',
     fontWeight: 'bold',
   },
@@ -312,10 +296,14 @@ const styles = ScaledSheet.create({
     color: '#686868',
     fontWeight: 'bold',
     top: '-63@s',
-    left:'12@s'
+    left: '12@s',
   },
   all: {
     alignItems: 'center',
     top: '19@s',
+  },
+  shadow: {
+    alignItems: 'center',
+    top: '-22@s',
   },
 });
