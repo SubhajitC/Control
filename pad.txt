@@ -1,0 +1,198 @@
+import {
+  StyleSheet,
+  Text,
+  View,
+  Dimensions,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
+import React from 'react';
+import {ScaledSheet} from 'react-native-size-matters';
+import {Card, Button} from 'react-native-paper';
+import Iconins from 'react-native-vector-icons/Entypo';
+import Icon from 'react-native-vector-icons/AntDesign';
+
+const {height, width} = Dimensions.get('window');
+
+const control = () => {
+  return (
+    <ScrollView>
+      <View>
+        <View styles={styles.header}>
+          <Iconins
+            name="chevron-left"
+            style={styles.backarrow}
+            color="#686868"
+            size={33}
+            onPress={() => {
+              navigation.goBack();
+            }}
+          />
+          <Iconins
+            name="menu"
+            style={styles.backarrow}
+            color="#686868"
+            size={33}
+            onPress={() => {
+              navigation.goBack();
+            }}
+          />
+        </View>
+        <View>
+        <Text
+        style={styles.textone}>Shade Control</Text>
+          <Text 
+          style={styles.texttwo}>Living control</Text>
+          <Text></Text>
+        </View>
+        <Text
+        style={styles.scene}
+        >SCENES</Text>
+        <View style={styles.txt}>
+          <Text>
+          <Iconins
+            name="rocket"
+            style={styles.backarrow}
+            color="#990000"
+            size={27}
+            onPress={() => {
+              navigation.goBack();
+            }}
+          />
+          ALL Off</Text>
+        </View>
+        <View style={styles.txt}>
+          <Text>
+          <Iconins
+          name="rocket"
+          style={styles.backarrow}
+          color="#990000"
+          size={27}
+          onPress={() => {
+            navigation.goBack();
+          }}
+        />
+          ALL Off</Text>
+        </View>
+        <View style={styles.txt}>
+          <Text>
+          <Iconins
+          name="rocket"
+          style={styles.backarrow}
+          color="#990000"
+          size={27}
+          onPress={() => {
+            navigation.goBack();
+          }}
+        />
+          Bright</Text>
+        </View>
+        <View style={styles.txt}>
+          <Text>
+          <Iconins
+          name="rocket"
+          style={styles.backarrow}
+          color="#990000"
+          size={27}
+          onPress={() => {
+            navigation.goBack();
+          }}
+        />
+          Bright</Text>
+        </View>
+        <Text style={styles.groupcontrols}>GROUP CONTROLS</Text>
+        <View>
+          <View style={styles.txt}>
+            <Text>More Open</Text>
+          </View>
+          <View style={styles.txt}>
+            <Text>More close</Text>
+          </View>
+        </View>
+        <Text style={styles.groupcontrols}>CONTROLS</Text>
+        <View style={styles.txt}>
+          <Text>
+          <Icon
+          name="rightcircle"
+          style={styles.backarrow}
+          color="#dcdcdc"
+          onPress={() => {
+            navigation.goBack();
+          }}
+        />
+          Windows Roller Blind OFF</Text>
+        </View>
+        <View>
+          <View style={styles.txt}>
+            <Text>Open</Text>
+          </View>
+          <View style={styles.txt}>
+            <Text>Pause</Text>
+          </View>
+          <View style={styles.txt}>
+            <Text>Close</Text>
+          </View>
+        </View>
+        <View>
+          <View style={styles.txt}>
+            <Text>Blackout</Text>
+          </View>
+          <View style={styles.txt}>
+            <Text>Flip+</Text>
+          </View>
+        </View>
+      </View>
+    </ScrollView>
+  );
+};
+
+export default control;
+
+const styles = ScaledSheet.create({
+
+  txt: {
+    height: '55@s',
+    width: width/1.9,
+    backgroundColor: '#FFF',
+    flexDirection:'column',
+    marginVertical:'5@s',
+    marginLeft:'133@s',
+    paddingLeft:'11@s',
+    alignItems: 'center',
+    fontFamily: 'Sans-serif',
+  },
+  pag:{
+    fontSize:'15@s',
+  },
+  textone:{
+    fontFamily: 'normal',
+    fontSize:'20@s',
+    fontWeight:'bold',
+    color:'#404040'
+  },
+  textone:{
+    fontSize:'17@s',
+    fontWeight:'bold',
+    color:'#404040'
+  },
+  texttwo:{
+    fontFamily: 'notoserif',
+    fontSize:'13@s', 
+    color:"#686868"
+  },
+  scene:{
+    fontFamily: 'notoserif',
+    fontSize:15, 
+    color:"#686868",
+    fontWeight:'bold'
+  },
+  groupcontrols:{
+    fontFamily: 'notoserif',
+    fontSize:15, 
+    color:"#686868",
+    fontWeight:'bold'
+  }
+
+
+ 
+});

@@ -12,6 +12,10 @@ https://www.react-native-material.com/
 https://oblador.github.io/react-native-vector-icons/
 
 
+font family
+https://infinitbility.com/react-native-font-family-list
+
+
 https://www.w3schools.com/colors/colors_picker.asp
 
 
